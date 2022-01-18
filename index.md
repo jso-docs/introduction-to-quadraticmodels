@@ -1,7 +1,7 @@
-@def title = "Template"
+@def title = "Introduction to QuadraticModels"
 @def showall = true
-@def tags = ["template", "fix-me"]
+@def tags = ["models"]
 
-\preamble{AUTHORS}
+\preamble{Geoffroy Leconte}
 
 \literate{/index.jl}

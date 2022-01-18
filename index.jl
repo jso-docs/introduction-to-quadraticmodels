@@ -1,4 +1,4 @@
-# # Template for jso-docs separate pages
+# In this tutorial you will learn how to create and use QuadraticModels.
 
 # \toc
 
