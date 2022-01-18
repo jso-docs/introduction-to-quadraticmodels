@@ -1,3 +1,4 @@
 # This file was generated, do not modify it. # hide
-using NLPModelsModifiers
-qmSlack = SlackModel(qmCOO)
+using QPSReader
+qps = readqps("AFIRO.SIF")
+qmCOO4 = QuadraticModel(qps)

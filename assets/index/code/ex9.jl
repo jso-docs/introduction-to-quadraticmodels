@@ -1,2 +1,3 @@
 # This file was generated, do not modify it. # hide
-hess(qmCOO, x)
+using NLPModelsModifiers
+qmSlack = SlackModel(qmCOO)

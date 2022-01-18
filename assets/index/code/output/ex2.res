@@ -1,5 +1,5 @@
-QuadraticModels.QuadraticModel{Float64, Vector{Float64}, SparseArrays.SparseMatrixCSC{Float64, Int64}, SparseArrays.SparseMatrixCSC{Float64, Int64}}
-  Problem name: QM_CSC
+QuadraticModels.QuadraticModel{Float64, Vector{Float64}, SparseMatricesCOO.SparseMatrixCOO{Float64, Int64}, SparseMatricesCOO.SparseMatrixCOO{Float64, Int64}}
+  Problem name: QM_COO
    All variables: ████████████████████ 3      All constraints: ████████████████████ 2     
             free: ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ 0                 free: ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ 0     
            lower: ████████████████████ 3                lower: ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ 0     
