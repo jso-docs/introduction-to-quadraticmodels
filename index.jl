@@ -2,7 +2,7 @@
 
 # \toc
 
-## Create a QuadraticModel
+# ## Create a QuadraticModel
 
 #=
 QuadraticModels represent the optimization problem
