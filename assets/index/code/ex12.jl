@@ -1,2 +1,4 @@
 # This file was generated, do not modify it. # hide
-# Create a QuadraticModel
+using RipQP
+stats = ripqp(qmCOO)
+println(stats)

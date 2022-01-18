@@ -1,0 +1,14 @@
+Generic Execution stats
+  status: solved to within acceptable tolerances
+  objective value: -5.695652173780926
+  primal feasibility: 7.049916206369744e-15
+  dual feasibility: 4.7513963410646664e-9
+  solution: [1.2608695644220296  3.3763361097641853e-10  0.4347826128463796]
+  multipliers: [1.3609139011424675e-11  2.4966609424032256e-9]
+  multipliers_L: [5.971585098234652e-11  0.39130435362801297  1.8723924364551696e-8]
+  multipliers_U: [0.0  0.0  0.0]
+  iterations: 32
+  elapsed time: 9.559928894042969
+  solver specific:
+    pdd: 1.132257491250906e-9
+    absolute_iter_cnt: 8
