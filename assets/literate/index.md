@@ -18,7 +18,7 @@ $$
 `H` should be a lower triangular matrix.
 QuadraticModels can work with different input matrix types:
 
-```julia:ex1
+````julia:ex1
 H = [
   6.0 2.0 1.0
   2.0 5.0 2.0
@@ -40,40 +40,40 @@ HCSC = sparse(tril(H))
 ACSC = sparse(A)
 qmCSC = QuadraticModel(c, HCSC, A = ACSC, lcon = lcon, ucon = ucon, lvar = l, uvar = u,
                        c0 = 0.0, name = "QM_CSC")
-```
+````
 
-```julia:ex2
+````julia:ex2
 qmCOO = QuadraticModel(c, HCOO, A = ACOO, lcon = lcon, ucon = ucon, lvar = l, uvar = u,
                        c0 = 0.0, name = "QM_COO")
-```
+````
 
-```julia:ex3
+````julia:ex3
 qmDense = QuadraticModel(c, tril(H), A = A, lcon = lcon, ucon = ucon, lvar = l, uvar = u,
                          c0 = 0.0, name = "QM_Dense")
-```
+````
 
-```julia:ex4
+````julia:ex4
 qmLinop = QuadraticModel(c, LinearOperator(Symmetric(H)), A = LinearOperator(A),
                          lcon = lcon, ucon = ucon, lvar = l, uvar = u,
                          c0 = 0.0, name = "QM_Linop")
-```
+````
 
 You can also create a COO QuadraticModel directly from the coordinates (without using [`SparseMatricesCOO.jl`](https://github.com/JuliaSmoothOptimizers/SparseMatricesCOO.jl)):
 
-```julia:ex5
+````julia:ex5
 Hrows, Hcols, Hvals = findnz(sparse(tril(H)))
 Arows, Acols, Avals = findnz(sparse(A))
 qmCOO2 = QuadraticModel(c, Hrows, Hcols, Hvals, Arows = Arows, Acols = Acols, Avals = Avals,
                         lcon = lcon, ucon = ucon, lvar = l, uvar = u,
                         c0 = 0.0, name = "QM_COO2")
-```
+````
 
 ## Convert your model
 
 Some functions work best with SparseMatricesCOO.
 You can convert your QuadraticModel with
 
-```julia:ex6
+````julia:ex6
 T = Float64
 S = Vector{T}
 qmCOO3 = convert(QuadraticModel{T, S, SparseMatrixCOO{T, Int}, SparseMatrixCOO{T, Int}},
@@ -81,47 +81,47 @@ qmCOO3 = convert(QuadraticModel{T, S, SparseMatrixCOO{T, Int}, SparseMatrixCOO{T
 
 qmCOO4 = convert(QuadraticModel{T, S, SparseMatrixCOO{T, Int}, SparseMatrixCOO{T, Int}},
                  qmCSC)
-```
+````
 
 ## Use the NLPModels.jl API
 
 You can use the API from [`NLPModels.jl`](https://juliasmoothoptimizers.github.io/NLPModels.jl/stable/api/#Reference-guide) with QuadraticModels.
 Here are some examples:
 
-```julia:ex7
+````julia:ex7
 using NLPModels
 x = rand(3)
 grad(qmCOO, x)
-```
+````
 
-```julia:ex8
+````julia:ex8
 hess(qmCOO, x)
-```
+````
 
 It is possible to convert the model to a QuadraticModel with linear inequality constraints to equality constraints and bounds using [`SlackModel`](https://juliasmoothoptimizers.github.io/NLPModelsModifiers.jl/stable/reference/#NLPModelsModifiers.SlackModel)
 
-```julia:ex9
+````julia:ex9
 using NLPModelsModifiers
 qmSlack = SlackModel(qmCOO)
-```
+````
 
 ## Read MPS/SIF files
 
 You can read directly MPS or SIF files using [`QPSReader.jl`](https://github.com/JuliaSmoothOptimizers/QPSReader.jl)
 
-```julia:ex10
+````julia:ex10
 using QPSReader
 qps = readqps("AFIRO.SIF")
 qmCOO4 = QuadraticModel(qps)
-```
+````
 
 ## Solving
 
 You can use [`RipQP.jl`](https://github.com/JuliaSmoothOptimizers/RipQP.jl) to solve QuadraticModels:
 
-```julia:ex11
+````julia:ex11
 using RipQP
 stats = ripqp(qmCOO)
 println(stats)
-```
+````
 
