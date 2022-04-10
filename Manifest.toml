@@ -186,10 +186,10 @@ uuid = "d7e528f0-a631-5988-bf34-fe36492bcfd7"
 version = "2.10.4+0"
 
 [[deps.FreeTypeAbstraction]]
-deps = ["ColorVectorSpace", "Colors", "FreeType", "GeometryBasics", "StaticArrays"]
-git-tree-sha1 = "8e76bcd47f98ee25c8f8be4b9a1c60f48efa4f9e"
+deps = ["ColorVectorSpace", "Colors", "FreeType", "GeometryBasics"]
+git-tree-sha1 = "b5c7fe9cea653443736d264b85466bad8c574f4a"
 uuid = "663a7486-cb36-511b-a19d-713bb74d65c9"
-version = "0.9.7"
+version = "0.9.9"
 
 [[deps.GeometryBasics]]
 deps = ["EarCut_jll", "IterTools", "LinearAlgebra", "StaticArrays", "StructArrays", "Tables"]
@@ -584,9 +584,9 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 
 [[deps.UnicodePlots]]
 deps = ["ColorTypes", "Contour", "Crayons", "Dates", "FileIO", "FreeTypeAbstraction", "LinearAlgebra", "MarchingCubes", "NaNMath", "SparseArrays", "StaticArrays", "StatsBase", "Unitful"]
-git-tree-sha1 = "e7b68f6d25a79dff79acbd3bcf324db4385c2c6f"
+git-tree-sha1 = "c3bab41f0910b8e3e70d88ee24a68ab952ec0a76"
 uuid = "b8865327-cd53-5732-bb35-84acbb429228"
-version = "2.10.1"
+version = "2.10.3"
 
 [[deps.Unitful]]
 deps = ["ConstructionBase", "Dates", "LinearAlgebra", "Random"]
