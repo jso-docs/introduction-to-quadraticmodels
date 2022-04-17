@@ -8,7 +8,7 @@ Generic Execution stats
   multipliers_L: [5.971585098234652e-11  0.39130435362801297  1.8723924364551696e-8]
   multipliers_U: [0.0  0.0  0.0]
   iterations: 32
-  elapsed time: 8.761980056762695
+  elapsed time: 9.029407024383545
   solver specific:
     pdd: 1.132257491250906e-9
     absolute_iter_cnt: 8
