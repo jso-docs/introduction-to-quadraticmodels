@@ -67,9 +67,9 @@ version = "0.12.8"
 
 [[deps.Compat]]
 deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "SHA", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
-git-tree-sha1 = "87e84b2293559571802f97dd9c94cfd6be52c5e5"
+git-tree-sha1 = "9be8be1d8a6f44b96482c8af52238ea7987da3e3"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
-version = "3.44.0"
+version = "3.45.0"
 
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -253,9 +253,9 @@ version = "0.21.3"
 
 [[deps.Krylov]]
 deps = ["LinearAlgebra", "Printf", "SparseArrays"]
-git-tree-sha1 = "a024280a69c49f51ba29d2deb66f07508f0b9b49"
+git-tree-sha1 = "13b16b00144816211cbf92823ded6042490eb009"
 uuid = "ba0b0d4f-ebba-5204-a429-3ac8c609bfb7"
-version = "0.7.13"
+version = "0.8.1"
 
 [[deps.LDLFactorizations]]
 deps = ["AMD", "LinearAlgebra", "SparseArrays", "Test"]
@@ -270,9 +270,9 @@ uuid = "39f5bc3e-5160-4bf8-ac48-504fd2534d24"
 version = "0.3.3"
 
 [[deps.LazyModules]]
-git-tree-sha1 = "f4d24f461dacac28dcd1f63ebd88a8d9d0799389"
+git-tree-sha1 = "a560dd966b386ac9ae60bdd3a3d3a326062d3c3e"
 uuid = "8cdb02fc-e678-4876-92c5-9defec4f444e"
-version = "0.3.0"
+version = "0.3.1"
 
 [[deps.LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]
@@ -305,9 +305,9 @@ version = "2.3.2"
 
 [[deps.Literate]]
 deps = ["Base64", "IOCapture", "JSON", "REPL"]
-git-tree-sha1 = "28834c7d79a7c3efeeb8d374b598f584324e9f8a"
+git-tree-sha1 = "5b5ec7696d40868945c407f28a6672a230448b70"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
-version = "2.13.3"
+version = "2.13.4"
 
 [[deps.LiveServer]]
 deps = ["Crayons", "FileWatching", "HTTP", "Pkg", "Sockets", "Test"]
@@ -466,9 +466,9 @@ version = "1.3.0"
 
 [[deps.RipQP]]
 deps = ["DelimitedFiles", "Krylov", "LDLFactorizations", "LLSModels", "LinearAlgebra", "LinearOperators", "MatrixMarket", "NLPModelsModifiers", "Quadmath", "QuadraticModels", "Requires", "SolverCore", "SparseArrays", "SparseMatricesCOO", "Statistics"]
-git-tree-sha1 = "9d808d76ec3d4cab0f3f57f86dd90b042f58fa70"
+git-tree-sha1 = "b13833df35613b08d11aaac05e1e7615353a2774"
 uuid = "1e40b3f8-35eb-4cd8-8edd-3e515bb9de08"
-version = "0.2.6"
+version = "0.3.0"
 
 [[deps.SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -507,9 +507,9 @@ version = "0.1.0"
 
 [[deps.SpecialFunctions]]
 deps = ["ChainRulesCore", "IrrationalConstants", "LogExpFunctions", "OpenLibm_jll", "OpenSpecFun_jll"]
-git-tree-sha1 = "bc40f042cfcc56230f781d92db71f0e21496dffd"
+git-tree-sha1 = "a9e798cae4867e3a41cae2dd9eb60c047f1212db"
 uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
-version = "2.1.5"
+version = "2.1.6"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "Random", "Statistics"]
