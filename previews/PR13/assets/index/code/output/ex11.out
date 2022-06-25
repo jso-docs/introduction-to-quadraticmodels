@@ -1,0 +1,15 @@
+Generic Execution stats
+  status: first-order stationary
+  objective value: -5.6956521641208
+  primal feasibility: 3.885780586188048e-16
+  dual feasibility: 5.334399588718952e-12
+  solution: [1.2608695586860905  2.502461850391081e-8  0.43478259786166773]
+  multipliers: [4.206802886688845e-12  1.141648742192826e-10]
+  multipliers_L: [2.3271161304045762e-11  0.39130443799558634  6.365370041639302e-11]
+  multipliers_U: [0.0  0.0  0.0]
+  iterations: 32
+  elapsed time: 10.380982875823975
+  solver specific:
+    nvar_slack: 5
+    pdd: 1.4918291270615607e-9
+    absolute_iter_cnt: 8
